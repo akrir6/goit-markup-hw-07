@@ -1,0 +1,13 @@
+$colors: (
+  'text': #757575,
+  'title': #212121,
+  'btnhover-text': #ffffff,
+  'accent': #2196f3,
+  'firstbg': #ffffff,
+  'secondbg': #f5f4fa,
+  'base-svg': #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

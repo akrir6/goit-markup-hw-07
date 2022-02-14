@@ -1,0 +1,57 @@
+//header
+
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact__item {
+  & + & {
+    margin-left: 50px;
+  }
+}
+
+.contact__link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: getColor('text');
+
+  transition: color $hover-duration $hover-effect;
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+//footer
+
+.footer-contact__item {
+  & + & {
+    margin-top: 9px;
+  }
+}
+
+.footer-contact__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-contact__link--colored {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact__link--white {
+  color: #ffffff;
+}

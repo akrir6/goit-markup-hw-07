@@ -1,7 +1,3 @@
-$hover-effect: cubic-bezier(0.4, 0, 0.2, 1);
-$hover-duration: 250ms;
-$header-border: 1px;
-
 :root {
   --base-text-color: #757575;
   --title-color: #212121;
@@ -12,3 +8,4 @@ $header-border: 1px;
   --svg-base-color: #afb1b8;
   --list-space: 30px;
 }
+/*# sourceMappingURL=variables.css.map */
