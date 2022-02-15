@@ -1,0 +1,18 @@
+@function animbase($property) {
+  @return $property $hover-duration $hover-effect;
+}
+
+@mixin cards_template() {
+}
+
+@mixin social_template() {
+}
+
+// gap
+.list {
+  display: flex;
+
+  & > .item + .item {
+    margin-left: var(--list-space);
+  }
+}

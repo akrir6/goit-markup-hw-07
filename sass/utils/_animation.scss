@@ -1,5 +1,0 @@
-@mixin anim_base($property-list) {
-  @each $item in $property-list {
-    transition: $item $hover-duration $hover-effect;
-  }
-}

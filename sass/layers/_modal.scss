@@ -1,0 +1,39 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  padding: 40px;
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: var(--first-bgcolor);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: animbase(transform);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, 100%) scale(0.5);
+  }
+}
+
+.modal__header {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: getColor('title');
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}

@@ -1,18 +1,31 @@
 @import './utils/variables.scss';
 @import './utils/colors';
 @import './utils/visually-hidden';
-@import './utils/base';
+@import './utils/mixins';
 
-@import './components/container';
-@import './components/section';
-@import './components/header';
+@import './common/base';
+@import './common/container';
+@import './common/section';
+@import './common/backdrop';
+
 @import './components/logo';
 @import './components/navigation';
 @import './components/contacts';
-// @import '';
-
 @import './components/button';
 @import './components/filter';
 @import './components/social';
-@import './components/portfolio';
-@import './components/footer';
+@import './components/closebutton';
+
+@import './forms/subscribe';
+@import './forms/order';
+
+@import './layers/header';
+@import './layers/hero';
+@import './layers/features';
+@import './layers/activitys';
+@import './layers/team';
+@import './layers/clients';
+@import './layers/portfolio';
+@import './layers/footer';
+
+@import './layers/modal';
