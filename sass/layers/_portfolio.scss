@@ -4,15 +4,15 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: calc(-1 * var(--list-space));
-  margin-left: calc(-1 * var(--list-space));
+  margin-top: -1 * $list-space;
+  margin-left: -1 * $list-space;
 }
 
 .project__item {
   flex-basis: calc(100% / 3 - var(--list-space));
 
-  margin-top: var(--list-space);
-  margin-left: var(--list-space);
+  margin-top: $list-space;
+  margin-left: $list-space;
 }
 
 // card
@@ -20,7 +20,7 @@
 .project__link {
   display: inline-block;
 
-  transition: box-shadow $hover-duration $hover-effect;
+  transition: anim-base(box-shadow);
 
   &:hover,
   &:focus {
@@ -48,13 +48,11 @@
   width: 100%;
   height: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-centered;
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform $hover-duration $hover-effect;
+  transition: anim-base(transform);
 
   .project__link:hover &,
   .project__link:focus & {
@@ -76,7 +74,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: getColor('title');
+  color: getColor(title);
 }
 
 .project__type {
@@ -85,5 +83,5 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: getColor('text');
+  color: getColor(text);
 }

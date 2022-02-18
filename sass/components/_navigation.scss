@@ -4,9 +4,7 @@
 }
 
 .navigation__item {
-  & + & {
-    margin-left: 50px;
-  }
+  @include list-gap(50px);
 }
 
 .navigation__link {
@@ -19,18 +17,18 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: getColor('title');
+  color: getColor(title);
 
-  transition: color $hover-duration $hover-effect;
+  transition: anim-base(color);
 
   &:hover,
   &:focus {
-    color: getColor('accent');
+    color: getColor(accent);
   }
 }
 
 .navigation__link--current {
-  color: getColor('accent');
+  color: getColor(accent);
 
   &::after {
     position: absolute;
@@ -42,7 +40,7 @@
     width: 100%;
     height: 4px;
 
-    background-color: getColor('accent');
+    background-color: getColor(accent);
     border-radius: 2px;
   }
 }

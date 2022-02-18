@@ -6,9 +6,7 @@
 }
 
 .contact__item {
-  & + & {
-    margin-left: 50px;
-  }
+  @include list-gap(50px);
 }
 
 .contact__link {
@@ -18,13 +16,13 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: getColor('text');
+  color: getColor(text);
 
-  transition: color $hover-duration $hover-effect;
+  transition: anim-base(color);
 
   &:hover,
   &:focus {
-    color: getColor('accent');
+    color: getColor(accent);
   }
 }
 
@@ -36,9 +34,7 @@
 //footer
 
 .footer-contact__item {
-  & + & {
-    margin-top: 9px;
-  }
+  @include list-gap(9px);
 }
 
 .footer-contact__link {

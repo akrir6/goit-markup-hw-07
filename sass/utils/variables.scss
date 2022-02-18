@@ -1,14 +1,8 @@
 $hover-effect: cubic-bezier(0.4, 0, 0.2, 1);
 $hover-duration: 250ms;
 $header-border: 1px;
+$list-space: 30px;
 
 :root {
-  --base-text-color: #757575;
-  --title-color: #212121;
-  --btnhover-text-color: #ffffff;
-  --accent-color: #2196f3;
-  --first-bgcolor: #ffffff;
-  --second-bgcolor: #f5f4fa;
-  --svg-base-color: #afb1b8;
-  --list-space: 30px;
+  --list-space: $list-space;
 }

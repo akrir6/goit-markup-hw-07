@@ -1,4 +1,4 @@
-@function animbase($property) {
+@function anim-base($property) {
   @return $property $hover-duration $hover-effect;
 }
 
@@ -8,11 +8,15 @@
 @mixin social_template() {
 }
 
-// gap
-.list {
-  display: flex;
-
-  & > .item + .item {
-    margin-left: var(--list-space);
+@mixin list-gap($gap: $list-space) {
+  // @if {}
+  & + & {
+    margin-left: $gap;
   }
+}
+
+@mixin flex-centered($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }

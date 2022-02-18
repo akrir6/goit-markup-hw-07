@@ -6,7 +6,8 @@ $colors: (
   'accent': #2196f3,
   'firstbg': #ffffff,
   'secondbg': #f5f4fa,
-  'base-svg': #afb1b8,
+  'svgbase': #afb1b8,
+  'svgcontent': #ffffff,
 );
 
 @function getColor($key) {

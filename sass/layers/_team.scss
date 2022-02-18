@@ -1,12 +1,13 @@
 .team {
-  background-color: var(--second-bgcolor);
+  display: flex;
 }
-.team-members > .item {
+.team__item {
+  @include list-gap;
+  background-color: getColor(firstbg);
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  background-color: var(--first-bgcolor);
 }
 
 .team-member {
@@ -20,38 +21,20 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: getColor(title);
 }
 
 .team-member-position {
   margin-top: 10px;
+  // margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--base-text-color);
+  color: getColor(text);
 }
-.team-member .social-links-list {
+
+.card__social {
   margin-top: 16px;
-}
-
-.team-member .social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-  color: var(--svg-base-color);
-
-  background-color: transparent;
-  border-radius: 50%;
-
-  transition: color 250ms var(--hover-efect), background-color 250ms var(--hover-efect);
-}
-.team-member .social-link:hover,
-.team-member .social-link:focus {
-  color: #ffffff;
-  background-color: var(--accent-color);
 }

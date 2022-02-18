@@ -3,13 +3,29 @@
   padding-bottom: 94px;
 }
 
-.section-title {
+.section--topzero {
+  padding-top: 0;
+}
+
+.section--firstbg {
+  background-color: getColor(firstbg);
+}
+
+.section--secondbg {
+  background-color: getColor(secondbg);
+}
+
+.section__title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: getColor(title);
+}
 
-  margin-bottom: 50px;
+.section__title--visually-hidden {
+  @extend %visually-hidden;
 }

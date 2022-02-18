@@ -1,11 +1,10 @@
 .filter {
-  display: flex;
-  justify-content: center;
+  @include flex-centered(center, null);
   margin-bottom: 50px;
 }
 
-.filter__item + .filter__item {
-  margin-left: 8px;
+.filter__item {
+  @include list-gap(8px);
 }
 
 .filter__button {
@@ -16,19 +15,19 @@
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: getColor('title');
-  background-color: getColor('secondbg');
+  color: getColor(title);
+  background-color: getColor(secondbg);
 
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: animbase(color), animbase(background-color), animbase(box-shadow);
+  transition: anim-base(color), anim-base(background-color), anim-base(box-shadow);
 
   &:hover,
   &:focus,
   &--checked {
-    color: getColor('btnhover-text');
-    background-color: getColor('accent');
+    color: getColor(btnhover-text);
+    background-color: getColor(accent);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
