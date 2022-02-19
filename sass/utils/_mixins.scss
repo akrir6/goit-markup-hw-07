@@ -8,10 +8,15 @@
 @mixin social_template() {
 }
 
-@mixin list-gap($gap: $list-space) {
-  // @if {}
-  & + & {
-    margin-left: $gap;
+@mixin list-gap($gap: $list-space, $direction: horisontal) {
+  @if $direction == horisontal {
+    & + & {
+      margin-left: $gap;
+    }
+  } @else if $direction == vertical {
+    & + & {
+      margin-top: $gap;
+    }
   }
 }
 

@@ -34,7 +34,7 @@
 //footer
 
 .footer-contact__item {
-  @include list-gap(9px);
+  @include list-gap(9px, vertical);
 }
 
 .footer-contact__link {
