@@ -1,31 +1,9 @@
-@import './utils/variables.scss';
-@import './utils/visually-hidden';
-@import './utils/functions';
-@import './utils/mixins';
+@import './utils/utils';
 
-@import './common/base';
-@import './common/container';
-@import './common/section';
-@import './common/backdrop';
+@import './common/common';
 
-@import './form-elements/field';
-@import './form-elements/checbox';
-@import './form-elements/button';
+@import './form-elements/form-elements';
 
-@import './components/logo';
-@import './components/navigation';
-@import './components/contacts';
-@import './components/filter';
-@import './components/social';
-@import './components/closebutton';
+@import './components/components';
 
-@import './layers/header';
-@import './layers/hero';
-@import './layers/features';
-@import './layers/activitys';
-@import './layers/team';
-@import './layers/clients';
-@import './layers/portfolio';
-@import './layers/footer';
-@import './layers/subscribe';
-@import './layers/modal';
+@import './layers/layers';
