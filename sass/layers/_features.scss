@@ -1,5 +1,6 @@
 .feature {
   display: flex;
+  justify-content: center;
 }
 
 .feature__item {
@@ -11,7 +12,7 @@
   @include flex-centered;
   height: 120px;
 
-  background-color: getColor(secondbg);
+  background-color: get-color(secondbg);
   border-radius: 4px;
 }
 
@@ -27,7 +28,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: getColor(title);
+  color: get-color(title);
 }
 
 .feature__text {
@@ -36,5 +37,5 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: getColor(text);
+  color: get-color(text);
 }

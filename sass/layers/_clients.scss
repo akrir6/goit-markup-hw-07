@@ -1,30 +1,31 @@
 .client {
   display: flex;
+  flex-wrap: wrap;
 }
 .client__item {
-  @include flex-centered();
+  @include flex-centered;
 
-  width: 170px;
+  flex-basis: 170px;
   height: 92px;
 
-  @include list-gap();
+  @include list-gap;
 }
 
 .client__link {
-  @include flex-centered();
+  @include flex-centered;
   width: 100%;
   height: 100%;
 
-  color: getColor(svgbase);
-  border: 1px solid getColor(svgbase);
+  color: get-color(svgbase);
+  border: 1px solid get-color(svgbase);
   border-radius: 4px;
 
   transition: anim-base(color), anim-base(border-color);
 
   &:hover,
   &:focus {
-    color: getColor(accent);
-    border-color: getColor(accent);
+    color: get-color(accent);
+    border-color: get-color(accent);
   }
 }
 

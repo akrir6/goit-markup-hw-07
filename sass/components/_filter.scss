@@ -15,8 +15,8 @@
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: getColor(title);
-  background-color: getColor(secondbg);
+  color: get-color(title);
+  background-color: get-color(secondbg);
 
   border: none;
   border-radius: 4px;
@@ -26,8 +26,8 @@
   &:hover,
   &:focus,
   &--checked {
-    color: getColor(btnhover-text);
-    background-color: getColor(accent);
+    color: get-color(btnhover-text);
+    background-color: get-color(accent);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }

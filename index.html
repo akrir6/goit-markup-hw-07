@@ -140,10 +140,10 @@
           <ul class="team">
             <li class="team__item">
               <img src="./images/idemianenko.jpg" alt="Игорь Демьяненко" width="270" />
-              <div class="card team-member">
-                <h3 class="card__title team-member-name">Игорь Демьяненко</h3>
-                <p lang="en" class="card__text team-member-position">Product Designer</p>
-                <ul class="social card__social">
+              <div class="team__card">
+                <h3 class="team__name">Игорь Демьяненко</h3>
+                <p lang="en" class="team__position">Product Designer</p>
+                <ul class="social team__social">
                   <li class="social__item">
                     <a href="https://www.instagram.com" class="social__link social__link--lightbg">
                       <svg class="social__icon">
@@ -177,10 +177,10 @@
             </li>
             <li class="team__item">
               <img src="./images/orepina.jpg" alt="Ольга Репина" width="270" />
-              <div class="team-member">
-                <h3 class="team-member-name">Ольга Репина</h3>
-                <p lang="en" class="team-member-position">Frontend Developer</p>
-                <ul class="social card__social">
+              <div class="team__card">
+                <h3 class="team__name">Ольга Репина</h3>
+                <p lang="en" class="team__position">Frontend Developer</p>
+                <ul class="social team__social">
                   <li class="social__item">
                     <a href="https://www.instagram.com" class="social__link social__link--lightbg"
                       ><svg class="social__icon">
@@ -214,10 +214,10 @@
             </li>
             <li class="team__item">
               <img src="./images/mtarasov.jpg" alt="Николай Тарасов" width="270" />
-              <div class="team-member">
-                <h3 class="team-member-name">Николай Тарасов</h3>
-                <p lang="en" class="team-member-position">Marketing</p>
-                <ul class="social card__social">
+              <div class="team__card">
+                <h3 class="team__name">Николай Тарасов</h3>
+                <p lang="en" class="team__position">Marketing</p>
+                <ul class="social team__social">
                   <li class="social__item">
                     <a href="https://www.instagram.com" class="social__link social__link--lightbg"
                       ><svg class="social__icon">
@@ -251,10 +251,10 @@
             </li>
             <li class="team__item">
               <img src="./images/myermakov.jpg" alt="Михаил Ермаков" width="270" />
-              <div class="team-member">
-                <h3 class="team-member-name">Михаил Ермаков</h3>
-                <p lang="en" class="team-member-position">UI Designer</p>
-                <ul class="social card__social">
+              <div class="team__card">
+                <h3 class="team__name">Михаил Ермаков</h3>
+                <p lang="en" class="team__position">UI Designer</p>
+                <ul class="social team__social">
                   <li class="social__item">
                     <a href="https://www.instagram.com" class="social__link social__link--lightbg"
                       ><svg class="social__icon">
@@ -400,7 +400,7 @@
           <form class="subscribe">
             <input type="email" name="email" class="subscribe__email" placeholder="E-mail" />
 
-            <button type="submit" class="button">
+            <button type="submit" class="button subscribe__button">
               Подписаться
               <svg class="button__icon"><use href="./images/icons.svg#send"></use></svg>
             </button>
@@ -415,51 +415,48 @@
           <svg class="close-button__icon"><use href="./images/icons.svg#close"></use></svg>
         </button>
         <h2 class="modal__header">Оставьте свои данные, мы вам перезвоним</h2>
-        <form class="order-form">
-          <label class="form-field">
-            <span class="field-label">Имя</span>
-            <input type="text" class="field-input" name="name" />
+        <form class="modal__form">
+          <label class="field">
+            <span class="field__label">Имя</span>
+            <input type="text" class="field__input" name="name" />
 
-            <svg class="field-icon"><use href="./images/icons.svg#person"></use></svg>
+            <svg class="field__icon"><use href="./images/icons.svg#person"></use></svg>
           </label>
-          <label class="form-field">
-            <span class="field-label">Телефон</span>
-            <input type="tel" class="field-input" name="phone" />
+          <label class="field">
+            <span class="field__label">Телефон</span>
+            <input type="tel" class="field__input" name="phone" />
 
-            <svg class="field-icon"><use href="./images/icons.svg#phone"></use></svg>
+            <svg class="field__icon"><use href="./images/icons.svg#phone"></use></svg>
           </label>
-          <label class="form-field">
-            <span class="field-label">Почта</span>
-            <input type="email" class="field-input" name="email" />
+          <label class="field">
+            <span class="field__label">Почта</span>
+            <input type="email" class="field__input" name="email" />
 
-            <svg class="field-icon"><use href="./images/icons.svg#email"></use></svg>
-          </label>
-
-          <label class="form-field">
-            <span class="field-label">Комментарий</span>
-            <textarea
-              class="field-input comment"
-              nam="comment"
-              placeholder="Введите текст"
-            ></textarea>
+            <svg class="field__icon"><use href="./images/icons.svg#email"></use></svg>
           </label>
 
-          <label class="form-checkbox">
+          <label class="field">
+            <span class="field__label">Комментарий</span>
+            <textarea class="field__textarea" name="comment" placeholder="Введите текст"></textarea>
+          </label>
+
+          <label class="checkbox">
             <input
               type="checkbox"
-              class="field-checkbox"
+              class="checkbox--hidden"
               value="true"
               name="confirm-accept-conditions"
             />
-            <svg class="checkbox-icon">
+            <svg class="checkbox__icon">
               <use href="./images/icons.svg#checkbox"></use>
             </svg>
-            <span class="accept-conditions">
-              Соглашаюсь с рассылкой и принимаю <a href="" class="conditions">Условия договора</a>
+            <span class="checkbox__label">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="checkbox__link">Условия договора</a>
             </span>
           </label>
 
-          <button type="submit" class="button">Отправить</button>
+          <button type="submit" class="button modal__button">Отправить</button>
         </form>
       </div>
     </div>

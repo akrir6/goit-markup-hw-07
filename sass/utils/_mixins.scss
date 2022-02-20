@@ -1,14 +1,4 @@
-@function anim-base($property) {
-  @return $property $hover-duration $hover-effect;
-}
-
-@mixin cards_template() {
-}
-
-@mixin social_template() {
-}
-
-@mixin list-gap($gap: $list-space, $direction: horisontal) {
+@mixin list-gap($gap: $base-space, $direction: horisontal) {
   @if $direction == horisontal {
     & + & {
       margin-left: $gap;
@@ -19,7 +9,6 @@
     }
   }
 }
-
 @mixin flex-centered($justify-content: center, $align-items: center) {
   display: flex;
   justify-content: $justify-content;

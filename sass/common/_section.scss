@@ -8,11 +8,11 @@
 }
 
 .section--firstbg {
-  background-color: getColor(firstbg);
+  background-color: get-color(firstbg);
 }
 
 .section--secondbg {
-  background-color: getColor(secondbg);
+  background-color: get-color(secondbg);
 }
 
 .section__title {
@@ -23,7 +23,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: getColor(title);
+  color: get-color(title);
 }
 
 .section__title--visually-hidden {

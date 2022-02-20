@@ -3,38 +3,37 @@
 }
 .team__item {
   @include list-gap;
-  background-color: getColor(firstbg);
+  background-color: get-color(firstbg);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-member {
+.team__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-member-name {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: getColor(title);
+  color: get-color(title);
 }
 
-.team-member-position {
+.team__position {
   margin-top: 10px;
-  // margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: getColor(text);
+  color: get-color(text);
 }
 
-.card__social {
+.team__social {
   margin-top: 16px;
 }

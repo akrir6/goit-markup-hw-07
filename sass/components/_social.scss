@@ -27,17 +27,17 @@
 
   &:hover,
   &:focus {
-    color: getColor(svgcontent);
-    background-color: getColor(accent);
+    color: get-color(svgcontent);
+    background-color: get-color(accent);
   }
 }
 
 .social__link--lightbg {
-  color: getColor(svgbase);
+  color: get-color(svgbase);
   background-color: transparent;
 }
 
 .social__link--darkbg {
-  color: getColor(svgcontent);
+  color: get-color(svgcontent);
   background-color: rgba(255, 255, 255, 0.1);
 }

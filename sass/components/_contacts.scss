@@ -16,13 +16,13 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: getColor(text);
+  color: get-color(text);
 
   transition: anim-base(color);
 
   &:hover,
   &:focus {
-    color: getColor(accent);
+    color: get-color(accent);
   }
 }
 

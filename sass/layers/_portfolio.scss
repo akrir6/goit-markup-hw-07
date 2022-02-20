@@ -4,15 +4,14 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: -1 * $list-space;
-  margin-left: -1 * $list-space;
+  margin-top: -1 * $base-space;
+  margin-left: -1 * $base-space;
 }
 
 .project__item {
-  flex-basis: calc(100% / 3 - var(--list-space));
-
-  margin-top: $list-space;
-  margin-left: $list-space;
+  flex-basis: calc((100% - 3 * #{$base-space}) / 3);
+  margin-top: $base-space;
+  margin-left: $base-space;
 }
 
 // card
@@ -74,7 +73,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: getColor(title);
+  color: get-color(title);
 }
 
 .project__type {
@@ -83,5 +82,5 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: getColor(text);
+  color: get-color(text);
 }

@@ -15,8 +15,8 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  color: getColor('btnhover-text');
-  background-color: getColor('accent');
+  color: get-color(btnhover-text);
+  background-color: get-color(accent);
 
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -28,7 +28,7 @@
 
   &:hover,
   &:focus {
-    background-color: getColor('btnhover-bg');
+    background-color: get-color(btnhover-bg);
   }
 }
 
@@ -36,5 +36,5 @@
   margin-left: 10px;
   width: 24px;
   height: 24px;
-  fill: getColor('btnhover-text');
+  fill: get-color(btnhover-text);
 }

@@ -2,7 +2,7 @@
   @include flex-centered;
   width: 30px;
   height: 30px;
-  background-color: getColor(firstbg);
+  background-color: get-color(firstbg);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
@@ -17,6 +17,6 @@
 
   .close-button:hover &,
   .close-button:focus & {
-    fill: getColor(accent);
+    fill: get-color(accent);
   }
 }

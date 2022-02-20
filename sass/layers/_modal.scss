@@ -8,7 +8,7 @@
   min-width: 528px;
   min-height: 581px;
 
-  background-color: getColor(firstbg);
+  background-color: get-color(firstbg);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -22,18 +22,26 @@
 
 .modal__header {
   margin-bottom: 12px;
-
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: getColor(title);
+  color: get-color(title);
 }
 
 .modal__close-button {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__button {
+  align-self: center;
 }

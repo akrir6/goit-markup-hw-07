@@ -1,7 +1,7 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--first-bgcolor);
-  color: var(--base-text-color);
+  font-family: $base-fonts;
+  background-color: get-color(firstbg);
+  color: get-color(text);
 }
 
 a {
