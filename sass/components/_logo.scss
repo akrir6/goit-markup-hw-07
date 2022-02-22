@@ -5,12 +5,12 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: get-color('accent');
-}
 
-.header__logo {
-  color: #000000;
-}
+  &--lightbg {
+    color: #000000;
+  }
 
-.footer__logo {
-  color: #ffffff;
+  &--darkbg {
+    color: #ffffff;
+  }
 }

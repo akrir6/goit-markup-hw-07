@@ -42,12 +42,12 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
 
-.footer-contact__link--colored {
-  color: rgba(255, 255, 255, 0.6);
-}
+  &--colored {
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-.footer-contact__link--white {
-  color: #ffffff;
+  &--white {
+    color: #ffffff;
+  }
 }

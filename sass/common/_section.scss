@@ -1,18 +1,18 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.section--topzero {
-  padding-top: 0;
-}
+  &--topzero {
+    padding-top: 0;
+  }
 
-.section--firstbg {
-  background-color: get-color(firstbg);
-}
+  &--firstbg {
+    background-color: get-color(firstbg);
+  }
 
-.section--secondbg {
-  background-color: get-color(secondbg);
+  &--secondbg {
+    background-color: get-color(secondbg);
+  }
 }
 
 .section__title {
@@ -24,8 +24,8 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: get-color(title);
-}
 
-.section__title--visually-hidden {
-  @extend %visually-hidden;
+  &--visually-hidden {
+    @extend %visually-hidden;
+  }
 }
